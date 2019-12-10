@@ -1,0 +1,197 @@
+
+body {
+    font-family: Helvetica;
+    background-color: #f5f5f5;
+    max-width: 550px;
+    min-width: 250px;
+    line-height: 1.4em;
+    margin: 0 auto;
+    width: auto;
+    padding: 0;
+}
+
+header h1 {
+    top: -155px;
+    position: absolute;
+    width: 100%;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(175, 47, 47, 0.15);
+    display: block;
+}
+
+.all {
+    margin: 130px 0 40px 0;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+main {
+    background: white;
+    border-bottom: 1px solid #ededed
+}
+
+.input-todo {
+   display: block;
+   background: white;
+   border: none;
+   padding: 15px 15px 15px 60px;
+   font-family: Helvetica;
+
+}
+
+.todo-text {
+    font-family: Helvetica;
+    border: none;
+    line-height: 1.4em;
+    font-weight: 100;
+    font-size: 24px;
+    outline-style: none;
+}
+
+:placeholder-shown {
+    font-style: italic;
+    opacity: 0.2;
+}
+
+
+.add-button {
+	display: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Helvetica;
+    border: 1px solid #ededed;
+    font-weight: 100;
+    color: #4d4d4d;
+    border-top: 1px solid #e6e6e6;
+}
+
+li {
+    position: relative;
+    text-align: left;
+    display: block;
+    border-bottom: 1px solid #ededed;
+}
+
+label{
+    font-size: 24px;
+    padding: 13px 15px 13px 56px;
+    word-break: break-all;
+    line-height: 2.5;
+}
+
+li .tick + label {
+    background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E');
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+li .tick:checked + label {
+    background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
+    background-position: center left;
+    background-repeat: no-repeat;
+    color: #d9d9d9;
+    text-decoration: line-through;
+}
+
+li .tick {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    background: none;
+    opacity: 0;
+	position: absolute;
+    margin: auto 0;
+}
+
+.delete-button {
+    color:#cc9a9a;
+    background: none;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    outline-style: none;
+    position: absolute;
+    vertical-align: baseline;
+    right: 10px;
+    margin: auto 0;
+    display: none;
+    width: 40px;
+    height: 40px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.delete-button:hover {
+    color: #af5b5e;
+}
+
+li:hover .delete-button {
+    display: block;
+}
+
+.delete-button:after {
+    content: '';
+}
+
+li .edit-button {
+    display: none;
+}
+
+.edit {
+    line-height: 1.4em;
+    font-family: Helvetica;
+    font-size: 24px;
+    border: none;
+    outline-style: none;
+    width: 466px;
+    padding-left: 0px;
+    position: relative;
+}
+
+.edit-label {
+    border: 1px solid #999;
+    box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+    width: 452px;
+    position: relative;
+    margin-left: 41px;
+    padding: 16px 23px 16px 16px;
+}
+
+.finish-edit-button {
+    display: none;
+}
+    
+.footer {
+    padding:7px;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+}    
+
+.extra-button {
+    background: none;
+    color: #777;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 14px;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 3px 7px;
+    border: 1px solid transparent;
+    outline: 0;
+}
+
+.extra .extra-button:hover {
+    border-color: rgba(175, 47, 47, 0.1);
+}
+
+.extra-button:focus {
+    border-color: rgba(175, 47, 47, 0.2);
+}
+    
